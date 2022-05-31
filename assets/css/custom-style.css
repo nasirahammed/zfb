@@ -1,0 +1,95 @@
+:root {
+    --text-color1: #4b7200;
+    --bg-color1: #d0d3d5;
+    --bg-color2: #23282d;
+    --font-size1: 0.65rem;
+}
+
+
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.font1 {
+    font-size: calc(var(--font-size1) * 1.2);
+}
+
+.font2 {
+    font-size: calc(var(--font-size1) * 1.8);
+}
+
+.common-gradient-cta {
+    background: rgb(0,166,81);
+    background: linear-gradient(270deg, rgba(0,166,81,1) 0%, rgba(154,206,53,1) 100%);
+}
+
+.header-marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.header-marquee:hover .marquee-item {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.marquee-item {
+    display: inline-block;
+    will-change: transform;
+    -webkit-animation: marquee 25s linear infinite;
+    animation: marquee 25s linear infinite;
+}
+
+@-webkit-keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.header-marquee {
+    background-color: #c8cbce;
+    padding: 0.6rem 0;
+    color: var(--text-color1);
+}
+
+.top-nav .navbar {
+    background-color: #7ec441 !important;
+}
+
+main.main-content {
+    min-height: 1000px;
+}
+
+.payment-aside {
+    background-color: var(--bg-color2);
+    height: 100%;
+}
+
+.common-zakat-carousel  {
+    background-color: var(--bg-color1);
+}
+
+.common-zakat-carousel .caption-bottom {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    font-size: var(--font-size1);
+}
