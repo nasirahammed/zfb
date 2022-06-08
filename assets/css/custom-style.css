@@ -1,5 +1,6 @@
 :root {
     --text-color1: #4b7200;
+    --text-color2: #7ec441;
     --bg-color1: #d0d3d5;
     --bg-color2: #23282d;
     --font-size1: 0.65rem;
@@ -12,6 +13,12 @@ body {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.4;
+    color: #171717;
+}
+
+
+.fw-semibold {
+    font-weight: 600;
 }
 
 .font1 {
@@ -19,12 +26,48 @@ body {
 }
 
 .font2 {
+    font-size: calc(var(--font-size1) * 1.3);
+}
+
+.font3 {
+    font-size: calc(var(--font-size1) * 1.4);
+}
+
+.font4 {
+    font-size: calc(var(--font-size1) * 1.5);
+}
+
+.font5 {
+    font-size: calc(var(--font-size1) * 1.6);
+}
+
+.font6 {
+    font-size: calc(var(--font-size1) * 1.7);
+}
+
+.font7 {
     font-size: calc(var(--font-size1) * 1.8);
 }
 
+.font8 {
+    font-size: calc(var(--font-size1) * 1.9);
+}
+
+.font9 {
+    font-size: calc(var(--font-size1) * 2.0);
+}
+
+.font10 {
+    font-size: calc(var(--font-size1) * 2.1);
+}
+
+.txt-color1 {
+    color: var(--text-color2);
+}
+
 .common-gradient-cta {
-    background: rgb(0,166,81);
-    background: linear-gradient(270deg, rgba(0,166,81,1) 0%, rgba(154,206,53,1) 100%);
+    background: rgb(0, 166, 81);
+    background: linear-gradient(270deg, rgba(0, 166, 81, 1) 0%, rgba(154, 206, 53, 1) 100%);
 }
 
 .header-marquee {
@@ -75,6 +118,12 @@ body {
     background-color: #7ec441 !important;
 }
 
+.top-nav.text-white {
+    /* padding-left: 337px; */
+    z-index: -1;
+    position: relative;
+}
+
 main.main-content {
     min-height: 1000px;
 }
@@ -82,9 +131,10 @@ main.main-content {
 .payment-aside {
     background-color: var(--bg-color2);
     height: 100%;
+    /* margin-top: -52px; */
 }
 
-.common-zakat-carousel  {
+.common-zakat-carousel {
     background-color: var(--bg-color1);
 }
 
@@ -92,4 +142,35 @@ main.main-content {
     background-color: rgba(0, 0, 0, 0.5);
     bottom: 0;
     font-size: var(--font-size1);
+}
+
+.payment-aside-block {
+    border-bottom: 1px solid #7ec441;
+}
+
+.zakat-main-intro-cta button {
+    min-width: 196px;
+    min-height: 54px;
+}
+
+.quick-links-aside {
+    background: url("../images/quick-links-bg.jpg");
+}
+
+
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: 100%;
+        justify-content: space-evenly;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+
 }

@@ -75,10 +75,10 @@
         </div>
       </div>
     </header>
-    <div class="top-nav">
+    <div class="top-nav text-white">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
           <button
             class="navbar-toggler"
             type="button"
@@ -93,14 +93,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link text-white active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">APPEAL</a>
+                <a class="nav-link text-white" href="#">APPEAL</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link text-white dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -118,9 +123,32 @@
                   </li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">ZAKAT DISBURSEMENT</a>
+              </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link text-white dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  TYPES & RECIPIENT OF ZAKAT
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-white dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -140,7 +168,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link text-white dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -159,7 +187,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT US</a>
+                <a class="nav-link text-white" href="#">CONTACT US</a>
               </li>
             </ul>
           </div>
@@ -169,7 +197,7 @@
 
     <main class="main-content">
       <div class="row g-0">
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
           <div class="payment-aside p-4">
             <h2 class="m-0 mb-3 font2 text-white text-uppercase text-center">
               Pay Online
@@ -198,13 +226,44 @@
             >
               bank interest
             </button>
+
+            <div class="payment-aside-block mt-3 py-3">
+              <div class="mb-4 text-white">
+                <h4 class="m-0 mb-1 font1">Registration No:</h4>
+                <p class="m-0 font1">XXXXXXXXXXXXXXXXXXXX</p>
+              </div>
+              <div class="text-white">
+                <h4 class="m-0 mb-1 font1">PAN No:</h4>
+                <p class="m-0 font1">XXXXXXXXXXXXXXXXXXXX</p>
+              </div>
+            </div>
+            <div class="payment-aside-block py-3">
+              <div class="text-white">
+                <p class="m-0 font1">
+                  All the donations to ZFB are eligible for income tax benifits
+                  in india
+                </p>
+              </div>
+            </div>
+            <div class="payment-aside-block py-3">
+              <div class="txt-color1">
+                <p class="m-0 font1">80G, 12A, FCRA</p>
+              </div>
+            </div>
+            <div class="payment-aside-block py-3">
+              <div class="txt-color1">
+                <p class="m-0 font1">shariah complaint</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-3 col-md-3 col-sm-3 col-3">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
           <div class="zakat-main p-4">
             <section>
-              <h1>The standard Lorem Ipsum passage, used since the 1500s</h1>
-              <p>
+              <h2 class="m-0 mt-4 mb-4 pb-1 font5">
+                The standard Lorem Ipsum passage, used since the 1500s
+              </h2>
+              <p class="m-0 mb-3 font2">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -216,24 +275,132 @@
                 Various versions have evolved over the years, sometimes by
                 accident, sometimes on purpose (injected humour and the like).
               </p>
-              <a href=""> Read More >> </a>
+              <a class="d-inline-block text-decoration-none mb-5" href="">
+                Read More >>
+              </a>
+              <div
+                class="d-flex align-items-center justify-content-center zakat-main-intro-cta mb-5"
+              >
+                <button
+                  type="button"
+                  class="border-0 text-capitalize btn btn-primary common-gradient-cta fw-semibold me-5"
+                >
+                  Apply for Zakat
+                </button>
+                <button
+                  type="button"
+                  class="border-0 text-capitalize btn btn-primary common-gradient-cta fw-semibold"
+                >
+                  File Tracking
+                </button>
+              </div>
             </section>
-            <div class="common-zakat-carousel p-3">
-              <h4 class="mb-2 font1">Current Profile</h4>
-              <div class="owl-carousel owl-theme">
-                <div class="item position-relative">
-                  <img src="assets/images/slide1.jpg" alt="" />
-                  <div
-                    class="caption-bottom position-absolute text-white p-2 text-center"
-                  >
-                    passages of Lorem Ipsum available
+            <div class="common-zakat-carousel-wrap">
+              <h2 class="m-0 mb-3 font5">
+                The standard Lorem Ipsum passage, used since the 1500s
+              </h2>
+              <div class="common-zakat-carousel p-3 mb-4">
+                <h4 class="mb-2 font1">Current Profile</h4>
+                <div class="owl-carousel owl-theme">
+                  <div class="item position-relative">
+                    <img src="assets/images/slide1.jpg" alt="" />
+                    <div
+                      class="caption-bottom position-absolute text-white p-2 text-center"
+                    >
+                      passages of Lorem Ipsum available
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="common-zakat-carousel p-3">
+                <h4 class="mb-2 font1">Current Profile</h4>
+                <div class="owl-carousel owl-theme">
+                  <div class="item position-relative">
+                    <img src="assets/images/slide1.jpg" alt="" />
+                    <div
+                      class="caption-bottom position-absolute text-white p-2 text-center"
+                    >
+                      passages of Lorem Ipsum available
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">Right</div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+          <div class="user-avatar d-flex align-items-center mt-3 mb-4">
+            <img src="assets/images/user-avatar.png" alt="" />
+            <div class="ms-3">
+              <h4 class="m-0">Welcome</h4>
+              <p class="m-0">Account Name</p>
+            </div>
+          </div>
+          <div class="quick-links-aside py-4">
+            <button
+              type="button"
+              class="border-0 rounded-0 text-uppercase btn btn-primary common-gradient-cta d-block w-100 mb-3"
+            >
+              Youtube
+            </button>
+            <button
+              type="button"
+              class="border-0 rounded-0 text-uppercase btn btn-primary common-gradient-cta d-block w-100 mb-3"
+            >
+              Facebook
+            </button>
+            <button
+              type="button"
+              class="border-0 rounded-0 text-uppercase btn btn-primary common-gradient-cta d-block w-100 mb-3"
+            >
+              Twitter
+            </button>
+
+            <div class="payment-aside-block py-3 px-4">
+              <div class="txt-color1">
+                <a href="#" class="m-0 font1 text-white text-decoration-none">
+                  News Media Coverage
+                </a>
+              </div>
+            </div>
+            <div class="payment-aside-block py-3 px-4">
+              <div class="txt-color1">
+                <a href="#" class="m-0 font1 text-white text-decoration-none">
+                  Consult with MUFI
+                </a>
+              </div>
+            </div>
+            <div class="payment-aside-block py-3 px-4">
+              <div class="txt-color1">
+                <a href="#" class="m-0 font1 text-white text-decoration-none">
+                  Cosult with Chatered Accountant
+                </a>
+              </div>
+            </div>
+            <div class="payment-aside-block py-3 px-4">
+              <div class="txt-color1">
+                <a href="#" class="m-0 font1 text-white text-decoration-none">
+                  List of Beneficiaries
+                </a>
+              </div>
+            </div>
+            <div class="payment-aside-block py-3 px-4">
+              <div class="txt-color1">
+                <a href="#" class="m-0 font1 text-white text-decoration-none">
+                  Donate us & Became a member of this donors club receine donors
+                  card
+                </a>
+              </div>
+            </div>
+            <div class="payment-aside-block py-3 px-4">
+              <div class="txt-color1">
+                <a href="#" class="m-0 font1 text-white text-decoration-none">
+                  Donors' Benefits
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
