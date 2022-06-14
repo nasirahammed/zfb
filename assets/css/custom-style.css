@@ -125,7 +125,7 @@ body {
 }
 
 main.main-content {
-    min-height: 1000px;
+    overflow: hidden;
 }
 
 .payment-aside {
@@ -144,6 +144,24 @@ main.main-content {
     font-size: var(--font-size1);
 }
 
+button.owl-prev {
+    background: transparent;
+    position: absolute;
+    top: 40%;
+    left: -22px;
+    z-index: 9999;
+    transform: translate(0, -50%);
+}
+
+button.owl-next {
+    background: transparent;
+    position: absolute;
+    top: 40%;
+    right: -22px;
+    z-index: 9999;
+    transform: translate(0, -50%);
+}
+
 .payment-aside-block {
     border-bottom: 1px solid #7ec441;
 }
@@ -155,6 +173,16 @@ main.main-content {
 
 .quick-links-aside {
     background: url("../images/quick-links-bg.jpg");
+    height: calc(100% - 115px);
+    overflow: hidden;
+}
+
+.main-footer {
+    background-color: #171717;
+}
+
+.main-footer ul li a {
+    color: var(--text-color2);
 }
 
 
